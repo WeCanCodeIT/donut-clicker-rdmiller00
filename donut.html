@@ -4,36 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./donut.css">
+    <link rel="stylesheet" href= "assets/donut.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
     <title>Donut Dash | Fred's Bakery</title>
 </head>
 <body>
-    <header>
-        <img src="./assets/images/logo.jpg" alt="logo image">
-        <h1>Donut Dash | See How Fast You Can Make Donuts</h1>
+    <header class="header">
+        <div class="leftNavSection">
+            <img id="headerLogo" src="./assets/images/logo.jpg" alt="logo image">
+            <h1>Donut Dash | See How Fast You Can Make Donuts</h1>
+        </div>
         <nav id="navLinks">
             <ul>
-                <li><a href="">About Fred's Bakery</a></li>
-                <li><a href="">Cookie Clicker Inspiration</a></li>
-                <li><a href="">About Me</a></li>
+                <li><a href="/about.html">About Fred's Bakery</a></li>
+                <li><a href="/inspiration.html">Cookie Clicker Inspiration</a></li>
+                <li><a href="/aboutMe.html">About Me</a></li>
             </ul>
         </nav>
     </header>
-    <div class="gameCenter">
-        <h1>Fred Baker's Baking Company</h1>
-        <button id="donutBtn"><img src="./assets/images/donutBtn.png" alt="Pink sprinkle donut"></button>
-        <h2>Donut Count <span id="donutCount">0</span></h2>
+    <div class="leftSection">
+        <h1>Donut Shops Near You</h1>
+        <h3>Superior Bakery</h3>
+        <h3>2433 Hope Mills Rd. Fayetteville, NC 28304</h3>
     </div>
-    <div class="gameStore">
-        <h2>Equipment Upgrade | Make Donuts Without the Work</h2>
+    <div class="middleSection">
+        <div class="gameCenter">
+            <h1>Fred Baker's Baking Company</h1>
+            <button id="donutBtn"><img src="./assets/images/donutBtn.png" alt="Pink sprinkle donut"></button>
+            <h2>Donut Count <span id="donutCount">0</span></h2>
+        </div>
+        <div class="resetArea">
+            <button id="resetBtn">Push In Case Of Emergency!</button>
+            <h3>This will delete all business records and move all available funds to offshore accounts...</h3>
+        </div>
+    </div>
+    <div class="rightSection">
+        <h1>Equipment Upgrade</h1>
+        <h2>Make Donuts Without the Work</h2>
         <button id="buyAutoClicker">Buy Auto Donut Machine</button>
         <h3>Current Cost of Machine = <span id="autoClickCost">100</span></h3>
-        <p>Number of Machines Purchased: <span id="autoClickerCount">0</span></p>
+        <h3>Number of Machines Purchased: <span id="autoClickerCount">0</span></h3>
     </div>
-    <div class="resetArea">
-        <button id="resetBtn">Push In Case Of Emergency!</button>
-        <h3>This will delete all business records and move all available funds to offshore accounts...</h3>
-    </div>
+    
+    <footer class="footer">
+        <a href="www.linkedin.com/in/robert-bobby-miller-pmp-2a2539266">LinkedIn Profile</a>
+        <h3>Developed by Robert (Bobby) Miller</h3>
+        <a href="https://github.com/rdmiller00">GitHub Profile</a>
+    </footer>
     <script src="./donut.js"></script>
 </body>
 </html>

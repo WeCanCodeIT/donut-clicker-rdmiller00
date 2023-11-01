@@ -1,0 +1,115 @@
+body {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* Three equal-width columns */
+    grid-template-rows: 8% 85% 7%; /* Three rows with specified heights */
+
+    /* Adjust grid gap and other styles as needed */
+    gap: 10px;
+    background-color: #FBF1EF;
+    font-family: 'Mukta', sans-serif;
+    height: 100vh; /* Make the grid cover the full viewport height */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3f3b9;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d3f3b9;
+    margin: 5px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.leftNavSection{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+header img{
+    max-height: 50px;
+    border-radius: 25px;
+    margin: 0px 5px;
+}
+
+.gameCenter button {
+    width: 100px; /* Adjust the width and height as needed */
+    height: 100px;
+    background: url('./assets/images/donutBtn.png') center/cover no-repeat; /* Set the background image */
+    border-radius: 50%;
+    border: none; /* Remove any border */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    /* Other link styles here */
+}
+
+.header {
+    grid-column: span 3; /* Make the header span all three columns */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d3f3b9;
+    border-radius: 5px;
+}
+
+.footer {
+    grid-column: span 3; /* Make the footer span all three columns */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #d3f3b9;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.leftSection {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    background-color: #FBF1EF; /* Customize the background color */
+    padding: 10px; /* Add padding for better spacing */
+    border: 1px;
+}
+
+.middleSection {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF1EF; /* Customize the background color */
+    padding: 10px; /* Add padding for better spacing */
+}
+
+.rightSection {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center;
+    background-color: #FBF1EF; /* Customize the background color */
+    padding: 10px; /* Add padding for better spacing */
+}
