@@ -3,12 +3,14 @@ const donutCount = document.getElementById('donutCount');
 const buyAutoClicker = document.getElementById('buyAutoClicker');
 const autoClickerCount = document.getElementById('autoClickerCount');
 const autoClickCost = document.getElementById('autoClickCost');
-const resetBtn = document.getElementById('resetBtn')
+const resetBtn = document.getElementById('resetBtn');
+const donutImg = document.getElementById('donutBtn');
 
 let count = 0;
 let autoClickers = 0;
 let autoClickerRate = 1;
 let clickerCost = 20;
+let isHovered = false;
 
 function updateDisplay() {
     donutCount.textContent = Math.floor(count);

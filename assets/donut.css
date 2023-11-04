@@ -44,13 +44,17 @@ header img{
     margin: 0px 5px;
 }
 
-.gameCenter button {
-    width: 100px; /* Adjust the width and height as needed */
-    height: 100px;
-    background: url('./assets/images/donutBtn.png') center/cover no-repeat; /* Set the background image */
+.gameCenter img {
+    max-width: 750px; /* Adjust the width and height as needed */
+    max-height: 750px;
     border-radius: 50%;
-    border: none; /* Remove any border */
-    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */
+    cursor: pointer; /* Add a pointer cursor to indicate it's clickable */ 
+    transition: transform 0.3s; 
+}
+
+.gameCenter img:hover,
+.gameCenter img.hovered {
+    transform: scale(1.2); /* Increase the size on hover and click */
 }
 
 nav ul {
@@ -66,11 +70,11 @@ nav li {
 nav a {
     text-decoration: none;
     color: #333;
-    /* Other link styles here */
+    
 }
 
 .header {
-    grid-column: span 3; /* Make the header span all three columns */
+    grid-column: span 3; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -90,26 +94,78 @@ nav a {
 
 .leftSection {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     align-items: center;
-    background-color: #FBF1EF; /* Customize the background color */
-    padding: 10px; /* Add padding for better spacing */
-    border: 1px;
+    background-color: #FBF1EF; 
+    padding: 10px; 
+    border-right: 2px solid #333;
 }
 
 .middleSection {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
-    background-color: #FBF1EF; /* Customize the background color */
-    padding: 10px; /* Add padding for better spacing */
+    background-color: #FBF1EF; 
+    border: #333;
+    padding: 10px; 
 }
 
 .rightSection {
     display: flex;
-    flex-direction: column; /* Stack content vertically */
+    flex-direction: column;
     align-items: center;
-    background-color: #FBF1EF; /* Customize the background color */
-    padding: 10px; /* Add padding for better spacing */
+    background-color: #FBF1EF; 
+    padding: 10px; 
+    border-left: 2px solid #333;
 }
+
+.resetArea {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.centeredText {
+    text-align: center;
+}
+
+.rightSection h1, .leftSection h1  {
+    text-decoration: underline;
+}
+
+.middleSection h1{
+    font-size: 1.5;
+}
+
+#buyAutoClicker {
+    padding: 10px 20px;
+    background-color: #e693cd;
+    color: white;
+    border: 1.5px solid #384552;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#buyAutoClicker:hover {
+    background-color: #d963bf;
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
+#resetBtn {
+    padding: 2px 4px;
+    background-color: #e6463a;
+    color: white;
+    border: 1.5px solid #384552;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#resetBtn:hover {
+    background-color: #ef2525;
+    transform: scale(1.05); /* Enlarge on hover */
+}
+
